@@ -9,6 +9,8 @@
 import Cocoa
 
 class InsertionSort: NSObject {
+    
+    // 每一趟操作就是在将一个元素插入到一个之前已经排好的有序列表中，从而得到一个新的有序列表，知道最后一个元素也插入到他之前的有序列表中，则排序结束
     static func sort(inputArray: [Int]) -> [Int] {
         var array = inputArray
         
