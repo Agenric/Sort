@@ -13,6 +13,7 @@
 		D72EF30D1EE5501600D818C2 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72EF30C1EE5501600D818C2 /* QuickSort.swift */; };
 		D72EF30F1EE6833B00D818C2 /* ShellSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72EF30E1EE6833B00D818C2 /* ShellSort.swift */; };
 		D7369B931EE69314006EED0A /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7369B921EE69314006EED0A /* MergeSort.swift */; };
+		D7369B951EE79C51006EED0A /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7369B941EE79C51006EED0A /* HeapSort.swift */; };
 		D756ABD91EE517ED0075098E /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D756ABD81EE517ED0075098E /* InsertionSort.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		D72EF30C1EE5501600D818C2 /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		D72EF30E1EE6833B00D818C2 /* ShellSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShellSort.swift; sourceTree = "<group>"; };
 		D7369B921EE69314006EED0A /* MergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		D7369B941EE79C51006EED0A /* HeapSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		D756ABD81EE517ED0075098E /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D7121CBA1EE3125200E968FC /* main.swift */,
+				D7369B941EE79C51006EED0A /* HeapSort.swift */,
 				D7121CC11EE3129800E968FC /* Util.swift */,
 				D7121CC31EE4F51200E968FC /* BubbleSort.swift */,
 				D756ABD81EE517ED0075098E /* InsertionSort.swift */,
@@ -145,6 +148,7 @@
 				D7369B931EE69314006EED0A /* MergeSort.swift in Sources */,
 				D7121CC21EE3129800E968FC /* Util.swift in Sources */,
 				D7121CC41EE4F51200E968FC /* BubbleSort.swift in Sources */,
+				D7369B951EE79C51006EED0A /* HeapSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

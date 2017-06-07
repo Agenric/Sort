@@ -57,7 +57,10 @@ sortBlock(name: "直接插入排序", array: array) { (inputArray) -> ([Int]) in
 //    return ShellSort.sort(inputArray: inputArray)
 //}
 
-
 sortBlock(name: "归并排序", array: array) { (inputArray) -> ([Int]) in
     return MergeSort.sort(inputArray: inputArray)
+}
+
+sortBlock(name: "堆排序", array: array) { (inputArray) -> ([Int]) in
+    return HeapSort.sort(inputArray: inputArray)
 }

@@ -14,23 +14,23 @@ class MergeSort: NSObject {
         var array = inputArray
         var helperArray = Array.init(repeating: 0, count: array.count)
 //        mergeSort(inputArray: &array, helperArray: &helperArray, low: 0, high: array.count - 1)
-        mergeSort(inputArray: &array, helperArray: &helperArray, lenght: array.count)
+        mergeSort(inputArray: &array, helperArray: &helperArray, length: array.count)
         return array
     }
     
-    private static func mergeSort(inputArray: inout [Int], helperArray: inout [Int], lenght: Int) {
+    private static func mergeSort(inputArray: inout [Int], helperArray: inout [Int], length: Int) {
         var len = 1
         
-        while len < lenght {
+        while len < length {
             let step = len
             len = 2 * step
             var i = 0
-            while i + len < lenght {
+            while i + len < length {
                 merge(inputArray: &inputArray, helperArray: &helperArray, low: i, middle: i + step - 1, high: i + len - 1)
                 i = i + len
             }
-            if i + step < lenght {
-                merge(inputArray: &inputArray, helperArray: &helperArray, low: i, middle: i + step - 1, high: lenght - 1)
+            if i + step < length {
+                merge(inputArray: &inputArray, helperArray: &helperArray, low: i, middle: i + step - 1, high: length - 1)
             }
         }
     }
