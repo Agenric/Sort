@@ -59,13 +59,20 @@ class HeapSort: NSObject {
     private static func DDLog(inputArray: [Int]) {
         // 深度
         let deep = Int(floorf(1 + log2(Float(inputArray.count))))
-        let n = 2
+        var charLength = 0
+        for i in 0..<inputArray.count {
+            var str = String(inputArray[i])
+            if str.characters.count > charLength {
+                charLength = str.characters.count
+            }
+        }
+        
         print("-----------------------start-----------------------")
         for row in 1...deep {
             // 计算第row行的border
-            let border = Int(powf(2, Float(deep + 1 - row)) - 2)
+            let border = Int(powf(2, Float(deep - row)) - 1) * charLength
             // 计算第row行的间距
-            let margin = row == 0 ? 0 : Int(powf(2, Float(deep + 2 - row)) - 2)
+            let margin = row == 0 ? 0 : Int(powf(2, Float(deep + 1 - row)) - 1) * charLength
             
             // 计算第row行共有几个数。2的row次方
             let count = Int(powf(2, Float(row - 1)))
@@ -75,13 +82,13 @@ class HeapSort: NSObject {
                     for _ in 0..<border {
                         print(" ", terminator: "")
                     }
-                    let str = String(format:"%.\(2)d", inputArray[count + i - 1])
+                    let str = String(format:"%.\(charLength)d", inputArray[count + i - 1])
                     print(str, terminator: "")
-                } else if count + i < inputArray.count {
+                } else if count + i <= inputArray.count {
                     for _ in 1...margin {
                         print(" ", terminator: "")
                     }
-                    let str = String(format:"%.\(2)d", inputArray[count + i - 1])
+                    let str = String(format:"%.\(charLength)d", inputArray[count + i - 1])
                     print(str, terminator: "")
                 } else {
                     break
